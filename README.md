@@ -1,16 +1,16 @@
-# delivery_app_test
+# A UI design made with Flutter for logistic and courier services.
 
-A new Flutter project.
+## Screenshots
 
-## Getting Started
+<img src="https://github.com/austinevick/Delivery-app-ui/blob/main/screenshots/Screenshot_20240713-130637.jpg" width="200">  <img src="https://github.com/austinevick/Delivery-app-ui/blob/main/screenshots/Screenshot_20240713-130645.jpg" width="200">
 
-This project is a starting point for a Flutter application.
+<img src="https://github.com/austinevick/Delivery-app-ui/blob/main/screenshots/Screenshot_20240713-130653.jpg" width="200"> <img src="https://github.com/austinevick/Delivery-app-ui/blob/main/screenshots/Screenshot_20240713-130713.jpg" width="200">
 
-A few resources to get you started if this is your first Flutter project:
+<img src="https://github.com/austinevick/Delivery-app-ui/blob/main/screenshots/Screenshot_20240713-130727.jpg" width="200"> <img src="https://github.com/austinevick/Delivery-app-ui/blob/main/screenshots/Screenshot_20240713-130735.jpg" width="200">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<img src="https://github.com/austinevick/Delivery-app-ui/blob/main/screenshots/Screenshot_20240713-130747.jpg" width="200"> <img src="https://github.com/austinevick/Delivery-app-ui/blob/main/screenshots/Screenshot_20240713-130804.jpg" width="200">
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/austinevick/Delivery-app-ui/blob/main/screenshots/Screenshot_20240713-130821.jpg" width="200">
+
+
+
