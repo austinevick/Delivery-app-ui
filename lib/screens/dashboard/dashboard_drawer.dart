@@ -41,9 +41,11 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                 child: ListView.builder(
               itemCount: _drawerItems.length,
               itemBuilder: (context, i) => ExpansionTile(
+                  initiallyExpanded: i == 1,
                   onExpansionChanged: (value) {
                     if (i == 1) {
-                      Future.delayed(Durations.extralong4)
+                      pop();
+                      Future.delayed(Durations.extralong3)
                           .whenComplete(() => push(const ShipmentsScreen()));
                     }
                   },
@@ -66,8 +68,21 @@ class _DashboardDrawerState extends State<DashboardDrawer> {
                                     _drawerItems[i].tiles[ix].text);
                                 setState(() {
                                   if (_drawerItems[i].tiles.length > 1) {
-                                    _drawerItems[i].tiles[ix].isExpanded =
-                                        !_drawerItems[i].tiles[ix].isExpanded;
+                                    if (!_drawerItems[i].tiles[0].isExpanded) {
+                                      _drawerItems[i].tiles[0].isExpanded =
+                                          true;
+                                      if (_drawerItems[i].tiles[1].isExpanded) {
+                                        _drawerItems[i].tiles[1].isExpanded =
+                                            false;
+                                      }
+                                    } else if (!_drawerItems[i]
+                                        .tiles[1]
+                                        .isExpanded) {
+                                      _drawerItems[i].tiles[1].isExpanded =
+                                          true;
+                                      _drawerItems[i].tiles[0].isExpanded =
+                                          false;
+                                    }
                                   }
                                 });
                               },

@@ -3,6 +3,7 @@ import 'package:delivery_app_test/screens/dashboard/dashboard_drawer.dart';
 import 'package:delivery_app_test/screens/notifications/notification_screen.dart';
 import 'package:delivery_app_test/screens/shipments/create_shipment_screen.dart';
 import 'package:delivery_app_test/widget/custom_button.dart';
+import 'package:entry/entry.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -43,7 +44,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
             IconButton(
                 onPressed: () {
                   showDialog(
-                      context: context, builder: (ctx) => SearchDialog());
+                      context: context,
+                      builder: (ctx) => const Entry.all(
+                          duration: animationDuration, child: SearchDialog()));
                 },
                 icon: const Icon(Icons.search_outlined)),
             Stack(
